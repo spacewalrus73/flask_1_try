@@ -3,4 +3,4 @@ lint:
 start:
 	poetry run flask --app main --debug run
 start-server:
-	gunicorn --workers=4 --bind=34.211.200.85:8000 main:app
+	gunicorn --workers=4 --bind=localhost:8000 main:app
